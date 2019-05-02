@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<display-name>Airline Database</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>AddAirline</servlet-name>
+		<servlet-class>servlets.AddAirline</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddAirline</servlet-name>
+		<url-pattern>/AddAirline</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetAirlines</servlet-name>
+		<servlet-class>servlets.GetAirlines</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetAirlines</servlet-name>
+		<url-pattern>/GetAirlines</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetAirline</servlet-name>
+		<servlet-class>servlets.GetAirline</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetAirline</servlet-name>
+		<url-pattern>/GetAirline</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RemoveAirlinesSearch</servlet-name>
+		<servlet-class>servlets.RemoveAirlinesSearch</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RemoveAirlinesSearch</servlet-name>
+		<url-pattern>/RemoveAirlinesSearch</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RemoveAirlinesDelete</servlet-name>
+		<servlet-class>servlets.RemoveAirlinesDelete</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RemoveAirlinesDelete</servlet-name>
+		<url-pattern>/RemoveAirlinesDelete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateAirlinesGet</servlet-name>
+		<servlet-class>servlets.UpdateAirlinesGet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateAirlinesGet</servlet-name>
+		<url-pattern>/UpdateAirlinesGet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateAirlinesConfirm</servlet-name>
+		<servlet-class>servlets.UpdateAirlinesConfirm</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateAirlinesConfirm</servlet-name>
+		<url-pattern>/UpdateAirlinesConfirm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateAirlinesDo</servlet-name>
+		<servlet-class>servlets.UpdateAirlinesDo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateAirlinesDo</servlet-name>
+		<url-pattern>/UpdateAirlinesDo</url-pattern>
+	</servlet-mapping>
+	
+
+	<listener>
+		<listener-class>listeners.JpaListener</listener-class>
+	</listener>
+</web-app>
